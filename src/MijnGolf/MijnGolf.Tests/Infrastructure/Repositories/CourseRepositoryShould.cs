@@ -29,5 +29,19 @@ namespace MijnGolf.Tests.Infrastructure.Repositories
                    .And
                    .HaveCount(4);
         }
+
+        [Fact]
+        public void ReturnCourseById()
+        {
+            var repo = new CourseRepository();
+            var course = repo.GetItem(new CourseByIdSpecification(2));
+
+            course.Should()
+                  .NotBeNull();
+
+            course.Id
+                  .Should()
+                  .Be(2);
+        }
     }
 }
