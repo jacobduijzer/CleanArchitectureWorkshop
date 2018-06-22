@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/v2ti3t1l6d2q3key?svg=true)](https://ci.appveyor.com/project/jacobduijzerRHM/cleanarchitectureworkshop)
+
+
 # Clean Architecture, workshop
 
 The aim of this workshop: getting started with clean architecture. Not by reading all the theory but starting handson with a sample application.
