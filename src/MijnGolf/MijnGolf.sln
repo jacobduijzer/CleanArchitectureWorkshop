@@ -1,0 +1,40 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MijnGolf.Domain", "MijnGolf.Domain\MijnGolf.Domain.csproj", "{3242F1FF-0B17-4B28-BB1A-28EDB30A53ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MijnGolf.Application", "MijnGolf.Application\MijnGolf.Application.csproj", "{600D49E6-B9E0-497D-998C-C48ABD196B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MijnGolf.Infrastructure", "MijnGolf.Infrastructure\MijnGolf.Infrastructure.csproj", "{5F14058A-B098-43D8-9459-72CE6A7AEA3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MijnGolf.Tests", "MijnGolf.Tests\MijnGolf.Tests.csproj", "{80E663C6-A745-46C0-AF91-99CDE784BE40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6E20ED2-FCCB-43F8-A5AC-ABFC74AAB340}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3242F1FF-0B17-4B28-BB1A-28EDB30A53ED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3242F1FF-0B17-4B28-BB1A-28EDB30A53ED}.Debug|x86.Build.0 = Debug|Any CPU
+		{3242F1FF-0B17-4B28-BB1A-28EDB30A53ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{3242F1FF-0B17-4B28-BB1A-28EDB30A53ED}.Release|x86.Build.0 = Release|Any CPU
+		{600D49E6-B9E0-497D-998C-C48ABD196B03}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{600D49E6-B9E0-497D-998C-C48ABD196B03}.Debug|x86.Build.0 = Debug|Any CPU
+		{600D49E6-B9E0-497D-998C-C48ABD196B03}.Release|x86.ActiveCfg = Release|Any CPU
+		{600D49E6-B9E0-497D-998C-C48ABD196B03}.Release|x86.Build.0 = Release|Any CPU
+		{5F14058A-B098-43D8-9459-72CE6A7AEA3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F14058A-B098-43D8-9459-72CE6A7AEA3A}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F14058A-B098-43D8-9459-72CE6A7AEA3A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F14058A-B098-43D8-9459-72CE6A7AEA3A}.Release|x86.Build.0 = Release|Any CPU
+		{80E663C6-A745-46C0-AF91-99CDE784BE40}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{80E663C6-A745-46C0-AF91-99CDE784BE40}.Debug|x86.Build.0 = Debug|Any CPU
+		{80E663C6-A745-46C0-AF91-99CDE784BE40}.Release|x86.ActiveCfg = Release|Any CPU
+		{80E663C6-A745-46C0-AF91-99CDE784BE40}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
