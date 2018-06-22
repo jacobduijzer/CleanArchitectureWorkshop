@@ -8,8 +8,14 @@
     <Folder Include="UseCases\" />
     <Folder Include="Entities\" />
     <Folder Include="Entities\Messages\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Specifications\" />
+    <Folder Include="Data\Specifications\Base\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="5.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MijnGolf.Domain\MijnGolf.Domain.csproj" />
   </ItemGroup>
 </Project>

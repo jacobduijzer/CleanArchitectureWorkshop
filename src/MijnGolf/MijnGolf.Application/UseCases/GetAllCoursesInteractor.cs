@@ -6,15 +6,15 @@ using MijnGolf.Application.Entities.Messages;
 
 namespace MijnGolf.Application.UseCases
 {
-    public class GetAllCourses : IRequestHandler<RetrieveCoursesRequestMessage, RetrieveCoursesResponseMessage>
+    public class GetAllCoursesInteractor : IRequestHandler<RetrieveCoursesRequestMessage, RetrieveCoursesResponseMessage>
     {
         // TODO: Add dependency to repository
-        public GetAllCourses()
+        public GetAllCoursesInteractor()
         {
         }
 
         // TODO: Implement handler
-        public Task<RetrieveCoursesResponseMessage> Handle(RetrieveCoursesRequestMessage request, CancellationToken cancellationToken)
+        public async Task<RetrieveCoursesResponseMessage> Handle(RetrieveCoursesRequestMessage request, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

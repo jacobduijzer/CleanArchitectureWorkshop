@@ -8,6 +8,7 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MijnGolf.Application\MijnGolf.Application.csproj" />
     <ProjectReference Include="..\MijnGolf.Domain\MijnGolf.Domain.csproj" />
   </ItemGroup>
 </Project>

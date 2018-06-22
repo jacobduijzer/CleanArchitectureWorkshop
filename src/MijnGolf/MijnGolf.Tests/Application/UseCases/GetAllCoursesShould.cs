@@ -1,9 +1,7 @@
 ﻿using MijnGolf.Application.UseCases;
 using FluentAssertions;
 using Xunit;
-using MijnGolf.Application.Entities.Messages;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace MijnGolf.Tests.Application.UseCases
 {
@@ -16,8 +14,8 @@ namespace MijnGolf.Tests.Application.UseCases
         [Fact]
         public void Construct()
         {
-            var useCase = new GetAllCourses();
-            useCase.Should().BeOfType<GetAllCourses>();
+            var useCase = new GetAllCoursesInteractor();
+            useCase.Should().BeOfType<GetAllCoursesInteractor>();
         }
 
         [Fact]
