@@ -22,6 +22,11 @@
     <Folder Include="Infrastructure\" />
     <Folder Include="Infrastructure\Repositories\" />
     <Folder Include="Application\UseCases\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Application\Entities\" />
+    <Folder Include="Application\Entities\Messages\" />
+    <Folder Include="Application\Data\" />
+    <Folder Include="Application\Data\Specifications\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MijnGolf.Application\MijnGolf.Application.csproj" />

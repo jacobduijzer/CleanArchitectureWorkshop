@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using MijnGolf.Domain.Entities;
-using System.Collections;
 using System.Linq;
+using MijnGolf.Domain.Contracts;
 
 namespace MijnGolf.Infrastructure.Repositories
 {
-    public class CourseRepository
+    public class CourseRepository : IRepository<Course>
     {
         private readonly IList<Course> _courses;
 
@@ -34,9 +34,17 @@ namespace MijnGolf.Infrastructure.Repositories
             };
         }
 
-        public IReadOnlyList<Course> GetAll()
+        public Course GetItem(ISpecification<Course> specification)
         {
-            return _courses.ToList()
+            return _courses.AsQueryable()
+                           .FirstOrDefault(specification.ToExpression());
+        }
+
+        public IReadOnlyList<Course> GetItems(ISpecification<Course> specification)
+        {
+            return _courses.AsQueryable()
+                           .Where(specification.ToExpression())
+                           .ToList()
                            .AsReadOnly();
         }
     }
