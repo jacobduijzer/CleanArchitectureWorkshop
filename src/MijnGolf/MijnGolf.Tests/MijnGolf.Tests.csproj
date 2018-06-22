@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+    <PackageReference Include="FluentAssertions" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Application\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\Repositories\" />
+    <Folder Include="Application\UseCases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MijnGolf.Application\MijnGolf.Application.csproj" />
+    <ProjectReference Include="..\MijnGolf.Domain\MijnGolf.Domain.csproj" />
+    <ProjectReference Include="..\MijnGolf.Infrastructure\MijnGolf.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
