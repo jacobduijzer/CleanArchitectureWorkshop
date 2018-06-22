@@ -20,7 +20,7 @@ namespace MijnGolf.Tests.Application.UseCases
             useCase.Should().BeOfType<GetAllCoursesInteractor>();
         }
 
-        [Fact(Skip = "Skipping for appvayor")]
+        [Fact]
         public async Task ReturnCourses()
         {
             var useCase = new GetAllCoursesInteractor();
