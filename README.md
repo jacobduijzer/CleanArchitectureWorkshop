@@ -6,7 +6,7 @@
 The aim of this workshop: getting started with clean architecture. Not by reading all the theory but starting handson with a sample application.
 
 # The problem
-We have a Golf application with multiple UI's: a website and an app. Both UI's are used to keep track of your game, scores, handicap, etc. This project screames for a clean architecture because we can re-use almost everything. Business logic, data storage, notifications.
+We have a Golf application with multiple UI's: a website and an app. Both UI's are used to keep track of your game, scores, handicap, etc. This project screams for a clean architecture because we can re-use almost everything. Business logic, data storage, notifications.
 
 # The Solution
 Clean Architecture :)
