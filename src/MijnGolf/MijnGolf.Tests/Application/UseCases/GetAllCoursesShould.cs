@@ -4,6 +4,7 @@ using Xunit;
 using System.Threading.Tasks;
 using MijnGolf.Application.Entities.Messages;
 using System.Threading;
+using MijnGolf.Infrastructure.Repositories;
 
 namespace MijnGolf.Tests.Application.UseCases
 {
@@ -16,17 +17,24 @@ namespace MijnGolf.Tests.Application.UseCases
         [Fact]
         public void Construct()
         {
-            var useCase = new GetAllCoursesInteractor();
+            var useCase = new GetAllCoursesInteractor(new CourseRepository());
             useCase.Should().BeOfType<GetAllCoursesInteractor>();
         }
 
         [Fact]
         public async Task ReturnCourses()
         {
-            var useCase = new GetAllCoursesInteractor();
+            var useCase = new GetAllCoursesInteractor(new CourseRepository());
             var result = await useCase.Handle(new RetrieveCoursesRequestMessage(), new CancellationToken());
-            result.Should().NotBeNull();
-            result.Courses.Should().NotBeNullOrEmpty().And.HaveCount(4);
+
+            result.Should()
+                  .NotBeNull();
+            
+            result.Courses
+                  .Should()
+                  .NotBeNullOrEmpty()
+                  .And
+                  .HaveCount(4);
         }
     }
 }

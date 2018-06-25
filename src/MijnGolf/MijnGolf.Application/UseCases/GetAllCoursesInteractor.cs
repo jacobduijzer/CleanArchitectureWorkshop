@@ -3,20 +3,26 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 using MijnGolf.Application.Entities.Messages;
+using MijnGolf.Domain.Contracts;
+using MijnGolf.Domain.Entities;
+using MijnGolf.Application.Data.Specifications;
+using System.Linq;
 
 namespace MijnGolf.Application.UseCases
 {
     public class GetAllCoursesInteractor : IRequestHandler<RetrieveCoursesRequestMessage, RetrieveCoursesResponseMessage>
-    {
-        // TODO: Add dependency to repository
-        public GetAllCoursesInteractor()
+    {   
+        public GetAllCoursesInteractor(IRepository<Course> courseRepository)
         {
+            _courseREepository = courseRepository;
         }
 
-        // TODO: Implement handler
         public async Task<RetrieveCoursesResponseMessage> Handle(RetrieveCoursesRequestMessage request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var items = _courseREepository.GetItems(new AllCoursesSpecification());
+            return new RetrieveCoursesResponseMessage(items);
         }
+
+        private IRepository<Course> _courseREepository;
     }
 }
